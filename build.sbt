@@ -12,5 +12,5 @@ libraryDependencies ++= Seq(
 
 libraryDependencies += ("org.scalatest" %% "scalatest" % "3.2.12" % "test" withSources())
 
-Compile / scalaSource := file("src/main")
-Test / scalaSource := file("src/test")
+Compile / scalaSource := baseDirectory.value / "src/main"
+Test / scalaSource := baseDirectory.value / "src/test"
